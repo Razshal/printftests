@@ -6,13 +6,13 @@
 /*   By: mfonteni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/17 15:29:49 by mfonteni          #+#    #+#             */
-/*   Updated: 2017/12/17 16:12:01 by mfonteni         ###   ########.fr       */
+/*   Updated: 2017/12/17 17:34:42 by mfonteni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PRINTFTESTS_H
 #define PRINTFTESTS_H
-#include "../printf/includes/libftprintf.h"
+#include "../printf/includes/libft.h"
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>

@@ -2,6 +2,7 @@ NAME = printftests
 PRINTF = libftprintf.a
 TPATH = ./tests/
 PRINTFPATH = ../printf/
+
 SRC = printftests.c \
 	  $(TPATH)simple_string_test.c
 OBJ = $(SRC:.c=.o)
