@@ -21,6 +21,7 @@ $(NAME): $(OBJ)
 
 clean:
 	@rm -f $(OBJ)
+	@rm -f $(PRINTF)
 
 fclean: clean
 	@rm -f $(NAME)
