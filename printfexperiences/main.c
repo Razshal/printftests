@@ -6,7 +6,7 @@
 /*   By: mfonteni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/18 16:34:29 by mfonteni          #+#    #+#             */
-/*   Updated: 2018/01/02 19:32:19 by mfonteni         ###   ########.fr       */
+/*   Updated: 2018/01/03 18:17:21 by mfonteni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,11 +40,14 @@ int main(void)
 	// If %%, the second % needs to be treated as a simple char
 	printf("%d\n", 1.5f);
 	//Behaviour seems undefined when giving a wrong arg to a specific flag
-//printf("%s\n", 5); > segfault, it means that we don't care about handlinguser mistakes with flags
+//printf("%s\n", 5); > segfault, it means that we don't care about
+//handling user mistakes with flags
 	printf("%%2\n"); // = %2
 	printf("%%\\n : %d\n", printf("%\n")); //is blank !
 	printf("bad printf %d\n", printf("%   ;;;;;;;;;;\n", test));
 	printf("bad printf second test %d\n", printf("%   ;;;;;;;;;; %d\n", test, 5));
-	printf("%-10.15lld\n", (long long)1568646874865);
+	printf("%-10.15lld\n", (long long)123456789123);
 	printf("%10s\n", "laser");
+	printf("lala%_____________%d\n", 5);
+	printf("lala%--+___d ____j______%d", 5);
 }
