@@ -6,7 +6,7 @@
 /*   By: mfonteni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/18 16:34:29 by mfonteni          #+#    #+#             */
-/*   Updated: 2018/01/03 18:17:21 by mfonteni         ###   ########.fr       */
+/*   Updated: 2018/01/06 14:05:00 by mfonteni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,11 @@ int main(void)
 	printf("bad printf second test %d\n", printf("%   ;;;;;;;;;; %d\n", test, 5));
 	printf("%-10.15lld\n", (long long)123456789123);
 	printf("%10s\n", "laser");
-	printf("lala%_____________%d\n", 5);
-	printf("lala%--+___d ____j______%d", 5);
+	printf("lala%~~~~~~~~~~~~~~~%d\n", 5);
+	printf("lala%--+___d ____j______%d\n", 5);
+	printf("%-++-+-+-+-+-+##10.15.65.65.85.20.hhhhhhlld\n", 5);
+	printf("Quelle belle %s nous fimes, %d hymenomycetes, %f\n", "Cueillette", 5, 4);
+	printf("test empty%d\n", printf(""));
+	printf("test empty%d\n");
+
 }
