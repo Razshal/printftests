@@ -6,7 +6,7 @@
 /*   By: mfonteni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/17 15:59:26 by mfonteni          #+#    #+#             */
-/*   Updated: 2017/12/17 19:41:15 by mfonteni         ###   ########.fr       */
+/*   Updated: 2018/01/08 18:14:12 by mfonteni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,7 @@
 
 void simple_string_test(void)
 {
-	int fd = 1;
-	char str[2048+1];
-
-	read(fd, str, 2048);
-	printf("captured : %s\n",str);
+	char *str = ft_strnew(4092);
+	str = printf_to_str(str, 4092, "je suis une :%s", "poule");
+	printf("printf\n%s\nsize:%lu", str, ft_strlen(str));
 }
