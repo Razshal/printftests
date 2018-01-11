@@ -9,12 +9,14 @@ OBJ = $(SRC:.c=.o)
 FLAGS = -Wall -Wextra -Werror
 
 all: $(NAME)
-	
+
+f: all
+	@./$(NAME)
 
 $(NAME): $(OBJ)
 	@make -C $(PRINTFPATH)
 	@cp $(PRINTFPATH)$(PRINTF) .
-	@gcc $(FLAGS) -o $(NAME) $(OBJ) $(PRINTF)
+	@gcc $(FLAGS) -o $(NAME) $(OBJ) $(PRINTF) -fsanitize=address
 
 %.o:%.c
 	@$(CC) $(FLAGS) -o $@ -c $<
