@@ -1,19 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   simple_string_test.c                               :+:      :+:    :+:   */
+/*   main2.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mfonteni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/12/17 15:59:26 by mfonteni          #+#    #+#             */
-/*   Updated: 2018/01/11 17:23:33 by mfonteni         ###   ########.fr       */
+/*   Created: 2018/01/11 11:26:53 by mfonteni          #+#    #+#             */
+/*   Updated: 2018/01/11 16:54:34 by mfonteni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../printftests.h"
+#include <stdio.h>
 
-void simple_string_test(void)
+int main(void)
 {
-	ft_printf("je suis une :%s", "poule");
-
+	printf("%0 .10d", 123456);
 }
