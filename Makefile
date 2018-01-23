@@ -6,7 +6,7 @@ PRINTFPATH = ../printf/
 SRC = printftests.c \
 	  $(TPATH)simple_string_test.c
 OBJ = $(SRC:.c=.o)
-FLAGS = -Wall -Wextra -Werror
+#FLAGS = -Wall -Wextra -Werror
 
 all: $(NAME)
 
@@ -16,7 +16,7 @@ f: all
 $(NAME): $(OBJ)
 	@make -C $(PRINTFPATH)
 	@cp $(PRINTFPATH)$(PRINTF) .
-	@gcc $(FLAGS) -o $(NAME) $(OBJ) $(PRINTF) -fsanitize=address
+	@gcc -o $(NAME) $(OBJ) $(PRINTF) -fsanitize=address -g3
 
 %.o:%.c
 	@$(CC) $(FLAGS) -o $@ -c $<
