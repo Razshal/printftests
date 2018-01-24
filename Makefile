@@ -14,7 +14,9 @@ f: all
 	@./$(NAME)
 
 $(NAME): $(OBJ)
+	@echo 'making your printf'
 	@make -C $(PRINTFPATH)
+	@echo 'make done'
 	@cp $(PRINTFPATH)$(PRINTF) .
 	@gcc -o $(NAME) $(OBJ) $(PRINTF) -fsanitize=address -g3
 
